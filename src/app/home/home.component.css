@@ -1,0 +1,47 @@
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+  }
+  
+  li {
+    flex: 0 0 calc(22% - 2vh); 
+    margin: 1vh;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    border-radius: 1vh;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    width: 100%;
+    height: auto; 
+    max-height: 20vh;
+    object-fit: contain; 
+  }
+  
+  li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a {
+    display: block;
+    padding: 1vh;
+    font-size: 1.5vh;
+  }
+  

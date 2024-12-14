@@ -1,0 +1,41 @@
+/* Container styling for the tags */
+.tags-container {
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center-align the items */
+    align-items: center; /* Vertically center the items */
+    border-bottom: 2px solid #e0e0e0; /* Subtle bottom border */
+    padding: 10px 0; /* Spacing above and below */
+    overflow-x: auto; /* Scrollable if tags overflow */
+    white-space: nowrap; /* Prevent tags from breaking lines */
+}
+
+/* Styling for individual tag links */
+.tag-link {
+    font-family: Arial, sans-serif; /* Font style */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Text size */
+    color: #000; /* Black text */
+    text-decoration: none; /* Remove underlines */
+    margin: 0 15px; /* Equal spacing on both sides of tags */
+    padding-bottom: 5px; /* Space for underline effect */
+    position: relative; /* For bottom underline */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Underline effect for hover */
+.tag-link::after {
+    content: ""; /* Create underline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; /* Underline thickness */
+    background-color: #000; /* Underline color */
+    transform: scaleX(0); /* Initially invisible */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    transform-origin: left;
+}
+
+.tag-link:hover::after {
+    transform: scaleX(1); /* Make underline visible on hover */
+}

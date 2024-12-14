@@ -1,0 +1,16 @@
+<div class="search-bar">
+    <!-- Search Input -->
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Search Food in KFC"
+      [(ngModel)]="searchItem"
+      (change)="search()"
+    />
+  
+    <!-- Search Button -->
+    <button class="search-btn" (click)="search()">
+      Search Food
+    </button>
+  </div>
+  

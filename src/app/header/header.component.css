@@ -1,0 +1,79 @@
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%; 
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .logo span {
+    font-size: 5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #d81c1c;
+    padding-left: 5%; 
+    letter-spacing: 0.5vw; 
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 3vw; 
+    padding-right: 40%; 
+  }
+  
+  .nav-links a {
+    font-size: 1.5vw; 
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .sign-in {
+    display: flex;
+    align-items: center;
+    gap: 1vw; 
+  }
+  
+  .sign-in .user-icon {
+    width: 2vw;
+    height: 2vw;
+  }
+  
+  .sign-in a {
+    font-size: 1rem; 
+    color: #808080;
+  }
+  
+  .header {
+    width: 100%;
+  }
+  
+  .nav-links {
+    flex-grow: 1; 
+    justify-content: flex-end;
+  }
+  
+  .header,
+  .logo span,
+  .nav-links {
+    max-width: 100%;
+    box-sizing: border-box; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+
