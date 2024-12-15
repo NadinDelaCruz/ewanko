@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  gap: 2rem;
+}
+
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+img {
+  border-radius: 1.5rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 30rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.details:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.details .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.details .name {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.details .price {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: black;
+  text-align: center;
+}
+
+.details .price::before {
+  color: black;
+  font-style: bold;
+}
+
+.details button {
+  color: white;
+  background-color: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.details button:hover {
+  background-color: #d62828;
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: pointer;
+}

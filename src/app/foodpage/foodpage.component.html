@@ -1,1 +1,19 @@
-<p>foodpage works!</p>
+<div class="container">
+  <img [src]="food.imageUrl" [alt]="food.name">
+</div>
+
+<div class="details">
+  <div class="header">
+    <span class="name">
+      {{ food.name }}
+    </span>
+
+    <div class="price">
+      <span>
+        ₱ {{ food.price }}
+      </span>
+    </div>
+
+    <button (click)="addToCart()">Order</button>
+  </div>
+</div>

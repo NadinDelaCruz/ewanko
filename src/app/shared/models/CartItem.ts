@@ -1,13 +1,14 @@
-import { Foods } from "./food";
+import { Foods } from './food';
 
-export class CartItem{
-  constructor(food:Foods){
+export class CartItem {
+  constructor(food: Foods) {
     this.food = food;
   }
 
-  food:Foods;
+  food: Foods;
   quantity: number = 1;
-  get price(): number{
+
+  get price(): number {
     return this.food.price * this.quantity;
   }
 }
