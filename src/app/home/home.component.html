@@ -3,7 +3,7 @@
 <h2 id="whats-new" class="title">WHAT'S NEW</h2>
 <ul>
     <li *ngFor="let food of foods">
-        <a>
+        <a routerLink="/food/{{ food.id }}">
             <img [src]="food.imageUrl" alt="Food image" />
         </a>
         <div class="content">
@@ -13,4 +13,3 @@
         </div>
     </li>
   </ul>
-  
