@@ -4,6 +4,7 @@ import { CartService } from '../services/cart.service';
 import { CartItem } from '../shared/models/CartItem';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { FoodService } from '../services/food/food.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -14,7 +15,7 @@ import { RouterLink } from '@angular/router';
 export class CartPageComponent implements OnInit{
   cart!: Cart;
   constructor(private cartService: CartService) {
-    this.setCart();
+      this.setCart();
    }
 
   ngOnInit(): void {
