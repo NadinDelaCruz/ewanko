@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Foods } from '../shared/models/food';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FoodService } from '../services/food/food.service';
 import { CartService } from '../services/cart.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-foodpage',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './foodpage.component.html',
   styleUrl: './foodpage.component.css'
 })
@@ -28,6 +28,6 @@ export class FoodpageComponent implements OnInit {
 
   addToCart() {
     this.cartService.addToCart(this.food);
-    this.router.navigateByUrl('/cart-page');
+    setTimeout(() => this.router.navigateByUrl('/cart-page'), 0);
   }
 }

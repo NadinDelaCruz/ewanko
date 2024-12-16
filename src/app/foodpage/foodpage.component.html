@@ -1,19 +1,25 @@
 <div class="container">
+  <!-- Food Image -->
   <img [src]="food.imageUrl" [alt]="food.name">
 </div>
 
 <div class="details">
   <div class="header">
-    <span class="name">
-      {{ food.name }}
-    </span>
+    <!-- Food Name -->
+    <span class="name">{{ food.name }}</span>
 
-    <div class="price">
-      <span>
-        ₱ {{ food.price }}
-      </span>
-    </div>
+    <!-- Food Price -->
+    <div class="price">₱ {{ food.price }}</div>
+  </div>
 
-    <button (click)="addToCart()">Order</button>
+  <!-- Food Description
+  <div class="description">
+    <p>{{ food.description }}</p>
+  </div> -->
+
+  <!-- Action Buttons -->
+  <div class="actions">
+    <button class="back-button" routerLink="">Back to Menu</button>
+    <button class="order-button" (click)="addToCart()">Order Now</button>
   </div>
 </div>

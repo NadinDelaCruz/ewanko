@@ -1,43 +1,53 @@
 <div class="container">
-  <ul>
-    <li *ngFor="let cartItem of cart.items">
-      <div>
+  <!-- Cart Items List -->
+  <ul class="cart-list">
+    <li *ngFor="let cartItem of cart.items" class="cart-item">
+      <!-- Food Image -->
+      <div class="food-image">
         <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
       </div>
 
-      <div>
+      <!-- Food Name -->
+      <div class="food-name">
         <a routerLink="/food/{{ cartItem.food.id }}">
           {{ cartItem.food.name }}
         </a>
       </div>
 
-      <div>
-        <select #quantitySelect (change)="changeQuantity(cartItem, quantitySelect.value)">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+      <!-- Quantity Selector -->
+      <div class="food-quantity">
+        <select [value]="cartItem.quantity" (change)="onQuantityChange($event, cartItem.food.id)">
+          <option *ngFor="let qty of [1, 2, 3, 4, 5]" [value]="qty">{{ qty }}</option>
         </select>
       </div>
 
-      <div>
+      <!-- Food Price -->
+      <div class="food-price">
         ₱ {{ cartItem.price }}
       </div>
 
+      <!-- Remove Button -->
       <button class="remove-button" (click)="removeFromCart(cartItem)">
         Remove
       </button>
     </li>
   </ul>
 
-  <div class="checkout">
-    <div class="food-count">
-      {{ cart.items.length }}
-    </div>
+ <!-- <div *ngFor="let cartItem of cart.items; let i = index">
+    {{ i + 1 }}: {{ cartItem.food.name }} - ₱ {{ cartItem.price }}
+  </div> -->
 
-    <div class="total-price">
-      ₱ {{ cart.totalPrice}}
+  <!-- Checkout and Actions Section -->
+  <div class="checkout">
+    <!-- Total Items and Price -->
+    <div class="food-count">{{ cart.items.length }} Items</div>
+    <div class="total-price">₱ {{ cart.totalPrice || 0 }}</div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="back-button" routerLink="">Back to Menu</button>
+      <button class="clear-cart" (click)="clearCart()">Clear Cart</button>
+      <button class="checkout-button" (click)="checkout()">Checkout</button>
     </div>
   </div>
 </div>

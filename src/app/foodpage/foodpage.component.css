@@ -3,29 +3,32 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 3rem;
+  margin: 2rem;
   gap: 2rem;
 }
 
 .container > * {
-  min-width: 25rem;
+  min-width: 20rem;
   max-width: 40rem;
 }
 
+/* Food Image */
 img {
   border-radius: 1.5rem;
   flex: 1 0;
   object-fit: cover;
-  height: 30rem;
+  height: 28rem;
   margin: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Details Section */
 .details {
   width: 100%;
   display: flex;
@@ -33,60 +36,130 @@ img:hover {
   justify-content: center;
   align-items: center;
   flex: 1 0;
-  border-radius: 1.5rem;
   padding: 2rem;
-  color: black;
   margin-left: 1rem;
-  background: #f9f9f9;
+  background: #fff8f2;
+  border-radius: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .details:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Header Section */
 .details .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Food Name */
 .details .name {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
+  color: #d22730;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Food Price */
+.details .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
   color: #333;
   text-align: center;
 }
 
-.details .price {
-  font-size: 1.8rem;
-  margin: 1rem 0;
-  color: black;
-  text-align: center;
-}
-
 .details .price::before {
-  color: black;
-  font-style: bold;
+  content: "Price: ";
+  color: #d22730;
+  font-weight: bold;
 }
 
-.details button {
-  color: white;
-  background-color: #e72929;
+/* Order Button */
+.details .order-button {
+  color: #fff;
+  background-color: #d22730;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 1rem 2rem;
   border-radius: 2rem;
   outline: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
-.details button:hover {
-  background-color: #d62828;
-  opacity: 1;
+.details .order-button:hover {
+  background-color: #b01c26;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Description Section */
+.description {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff8f2;
+  border: 1px solid #f1d1c4;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Action Buttons Container */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Back to Menu Button */
+.back-button {
+  color: #d22730;
+  background-color: transparent;
+  border: 2px solid #d22730;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d22730;
+  color: white;
+  cursor: pointer;
+}
+
+/* Order Button */
+.order-button {
+  color: #fff;
+  background-color: #d22730;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #b01c26;
   transform: scale(1.05);
   cursor: pointer;
 }
+

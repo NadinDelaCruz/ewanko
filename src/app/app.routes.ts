@@ -9,7 +9,8 @@ export const routes: Routes = [
     {path: 'search/:searchItem', component: HomeComponent},
     {path: 'tag/:tag', component: HomeComponent},
     {path: 'food/:id', component: FoodpageComponent},
-    {path: 'cart-page', component:CartPageComponent}
+    {path: 'cart-page', component:CartPageComponent},
+    {path: '**', redirectTo: '' }
 ];
 
 @NgModule({

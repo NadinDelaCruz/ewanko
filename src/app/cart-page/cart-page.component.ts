@@ -4,7 +4,6 @@ import { CartService } from '../services/cart.service';
 import { CartItem } from '../shared/models/CartItem';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { FoodService } from '../services/food/food.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -23,16 +22,46 @@ export class CartPageComponent implements OnInit{
 
   setCart() {
     this.cart = this.cartService.getCart();
+    console.log('Cart after refresh:', this.cart);
+    console.log('Total price:', this.cart.totalPrice);
   }
 
   removeFromCart(cartItem: CartItem) {
     this.cartService.removeFromCart(cartItem.food.id);
     this.setCart();
+
+    console.log('Total price:', this.cart.totalPrice);
   }
 
-  changeQuantity(cartItem:CartItem, quantityInString:string) {
-    const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.food.id, quantity);
+  changeQuantity(foodId: number, quantityInString: string): void {
+    const quantity = parseInt(quantityInString, 10);
+    this.cartService.changeQuantity(quantity, foodId);
     this.setCart();
+
+    console.log('Total price:', this.cart.totalPrice);
+  }
+
+  onQuantityChange(event: Event, foodId: number): void {
+    const target = event.target as HTMLSelectElement;
+    const quantity = parseInt(target.value, 10);
+
+    if (isNaN(quantity)) {
+      console.error('Invalid quantity:', target.value);
+      return;
+    }
+
+    this.cartService.changeQuantity(quantity, foodId);
+    this.setCart();
+  }
+
+  clearCart(): void {
+    this.cartService.clearCart();
+    this.setCart();
+
+    console.log('Total price:', this.cart.totalPrice);
+  }
+
+  checkout() {
+    alert('Proceeding to checkout. Thank you for your order!');
   }
 }

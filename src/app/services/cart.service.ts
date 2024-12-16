@@ -3,33 +3,63 @@ import { Cart } from '../shared/models/Cart';
 import { Foods } from '../shared/models/food';
 import { CartItem } from '../shared/models/CartItem';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  private cart:Cart = new Cart();
-  addToCart(food:Foods) : void{
-    let cartItem = this.cart.items.find(item => item.food.id === food.id)
-    if(cartItem){
-      this.changeQuantity(food.id, cartItem.quantity + 1);
-      return;
+
+  constructor() {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+      this.cart = JSON.parse(savedCart);
+    }
+  }
+
+  private cart: Cart = new Cart();
+
+  addToCart(food: Foods): void {
+    const existingCartItem = this.cart.items.find(item => item.food.id === food.id);
+
+    if (existingCartItem) {
+      existingCartItem.quantity += 1;
+    } else {
+      this.cart.items.push(new CartItem(food));
     }
 
-    this.cart.items.push(new CartItem(food));
+    this.saveCart();
+    console.log('Updated cart after adding new item:', this.cart);
   }
 
-  removeFromCart(foodId:number) : void{
-    this.cart.items = this.cart.items.filter(item => item.food.id != foodId)
+  private saveCart(): void {
+    localStorage.setItem('cart', JSON.stringify(this.cart));
+
+    console.log('Cart saved to localStorage:', this.cart);
   }
 
-  changeQuantity(quantity:number, foodId:number){
-    let cartItem = this.cart.items.find(item => item.food.id === foodId);
-    if(!cartItem) return;
+  removeFromCart(foodId: number): void {
+    this.cart.items = this.cart.items.filter(item => item.food.id !== foodId);
+    this.saveCart();
+  }
+
+  changeQuantity(quantity: number, foodId: number): void {
+    const cartItem = this.cart.items.find(item => item.food.id === foodId);
+
+    if (!cartItem) {
+      console.error(`Cart item not found for foodId: ${foodId}`);
+      return;
+    };
+
     cartItem.quantity = quantity;
+    this.saveCart();
   }
 
-  getCart():Cart{
+  getCart(): Cart {
+    console.log('Retrieving cart:', this.cart);
     return this.cart;
+  }
+
+  clearCart(): void {
+    this.cart.items = [];
+    this.saveCart();
   }
 }
