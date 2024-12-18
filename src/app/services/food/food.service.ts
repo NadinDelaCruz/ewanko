@@ -37,6 +37,7 @@ export class FoodService {
       {
         id:1,
         name: '8-Pc Bucket Meal',
+        description: 'A complete group meal with 8 pcs of your favorite Original Recipe or Hot and Crispy chicken, gravy, your choice of 4 fixins, 4 steamed rice and your choice of 4 drinks.',
         price: 805.00,
         imageUrl: '/assets/new1.png',
         tags: ['New']
@@ -45,6 +46,7 @@ export class FoodService {
       {
         id:2,
         name: 'Twister Combo',
+        description: 'Your choice between our California Maki or Pizza Twister, paired with your choice of fixins and drink.',
         price: 170.00,
         imageUrl: '/assets/new2.png',
         tags: ['New']
@@ -53,6 +55,7 @@ export class FoodService {
       {
         id:3,
         name: 'Famous Bowl Meal',
+        description: 'Famous bowl with drink',
         price: 95.00,
         imageUrl: '/assets/new3.png',
         tags: ['New']
@@ -61,6 +64,7 @@ export class FoodService {
       {
         id:4,
         name: 'Bucket of 10',
+        description: 'Buy a Bucket of 10 pcs of Original Recipe or Hot and Crispy chicken',
         price: 810.00,
         imageUrl: '/assets/new4.png',
         tags: ['New']
@@ -69,6 +73,7 @@ export class FoodService {
       {
         id:5,
         name: 'Zinger Combo',
+        description: 'Our signature big spicy sandwich made with crunchy Zinger chicken fillet topped with fresh lettuce and mayo in a soft Kaiser bun, served with your choice of fixins and drink.',
         price: 200.00,
         imageUrl: '/assets/new5.png',
         tags: ['New']
@@ -77,6 +82,7 @@ export class FoodService {
       {
       id:6,
       name: '2-PC Fully Loaded Meal',
+      description: '2 pieces of your favorite Original Recipe or Hot & Crispy chicken, paired with steamed rice,jr. mushroom soup, regular mashed potato, and your choice of drink.',
       price: 275.00,
       imageUrl: '/assets/new6.png',
       tags: ['New']
@@ -85,6 +91,7 @@ export class FoodService {
       {
         id:7,
         name: 'Ala King Zinger Steak Meal with Buttered Corn',
+        description: 'Zinger fillet drenched in Ala King sauce, with Chicken Butter Rice, Buttered Corn and Regular drink',
         price: 180.00,
         imageUrl: '/assets/new7.png',
         tags: ['New']
@@ -93,6 +100,7 @@ export class FoodService {
       {
         id:8,
         name: 'Creamy Iced Coffee',
+        description: 'KFCs signature blend of creamy iced coffee with 100% Arabica beans',
         price: 65.00,
         imageUrl: '/assets/new8.png',
         tags: ['New']
@@ -101,6 +109,7 @@ export class FoodService {
       {
         id:9,
         name: 'Large Shots Combo',
+        description: 'Our crunchy Shots -- Fun Shots or Hot Shots-- matched with our well loved crispy fries or your choice of fixin and a drink.',
         price: 190.00,
         imageUrl: '/assets/new9.png',
         tags: ['New']
@@ -109,6 +118,7 @@ export class FoodService {
       {
         id:10,
         name: 'Zinger Steak Fully Loaded Meal',
+        description: 'Load up with this new epic hunger buster meal. It includes 1 piece of our signature Original Recipe chicken, Zinger Steak with Ala King sauce, Mushroom Soup, Mashed Potato, served with steamed rice and your choice of drink.',
         price: 265.00,
         imageUrl: '/assets/new10.png',
         tags: ['New']
@@ -117,6 +127,7 @@ export class FoodService {
       {
         id:11,
         name: 'Zinger Sandwich Fully Loaded Meal',
+        description: 'Load up with this new epic hunger buster meal. It includes 1 piece of our signature Original Recipe chicken, Zinger Sandwich, Mushroom Soup, Mashed Potato, served with steamed rice and your choice of drink.',
         price: 280.00,
         imageUrl: '/assets/new11.png',
         tags: ['New']
@@ -125,6 +136,7 @@ export class FoodService {
       {
         id:12,
         name: 'Smoky BBQ Zinger Ala Carte',
+        description: 'CRISPY. SAUCY. JUICY. It is KFC signature Zinger topped with an addicting, sweet and smoky barbecue sauce.',
         price: 165.00,
         imageUrl: '/assets/new12.png',
         tags: ['New']
@@ -133,6 +145,7 @@ export class FoodService {
       {
         id:13,
         name: 'Smoky BBQ Zinger Combo',
+        description: 'CRISPY. SAUCY. JUICY. It is KFC signature Zinger topped with an addicting, sweet and smoky barbecue sauce paired with regular fries and a regular drink.',
         price: 210.00,
         imageUrl: '/assets/new13.png',
         tags: ['New']
@@ -141,6 +154,7 @@ export class FoodService {
       {
         id:14,
         name: 'Coffee Float',
+        description: 'Experience the delightful combination of creamy iced coffee and KFC French vanilla soft serve',
         price: 75.00,
         imageUrl: '/assets/new14.png',
         tags: ['New']
@@ -149,6 +163,7 @@ export class FoodService {
       {
         id:15,
         name: 'Zinger Stacker',
+        description: 'The New KFC Zinger Stacker. Enjoy the Zinger with 2 big fillet, cheese and mayo.',
         price: 240.00,
         imageUrl: '/assets/new15.png',
         tags: ['New']
@@ -157,6 +172,7 @@ export class FoodService {
       {
         id:16,
         name: 'Zinger Stacker Combo',
+        description: 'The New KFC Zinger Stacker. Enjoy the Zinger with 2 big fillet, cheese and mayo with fixin and drink.',
         price: 300.00,
         imageUrl: '/assets/new16.png',
         tags: ['New']
@@ -165,6 +181,7 @@ export class FoodService {
       {
         id:17,
         name: 'Holiday Brownie Box',
+        description: 'It is KFC Brownie Box Holiday Edition featuring 2 new flavors! Enjoy 2 pcs of the Original Chocolate brownie, 2 Almond Chocolate brownies, and 2 White Chocolate brownies!',
         price: 205.00,
         imageUrl: '/assets/new17.png',
         tags: ['New']
@@ -173,6 +190,7 @@ export class FoodService {
       {
         id:18,
         name: 'Bucket of 8pc. Chicken + Side',
+        description: 'Feast with Bucket & Match! Step 1: Choose a KFC Bucket! Step 2: Match it with a side! Step 3: Enjoy with rice & drinks!',
         price: 970.00,
         imageUrl: '/assets/new18.png',
         tags: ['New']
@@ -181,6 +199,7 @@ export class FoodService {
       {
         id:19,
         name: 'Bucket of Chicken & Steak + Side',
+        description: 'Feast with Bucket & Match! Step 1: Choose a KFC Bucket! Step 2: Match it with a side! Step 3: Enjoy with rice & drinks!',
         price: 970.00,
         imageUrl: '/assets/new19.png',
         tags: ['New']
@@ -189,6 +208,7 @@ export class FoodService {
       {
         id:20,
         name: 'Bucket of Shots + Side',
+        description: 'Feast with Bucket & Match! Step 1: Choose a KFC Bucket! Step 2: Match it with a side! Step 3: Enjoy with rice & drinks!',
         price: 970.00,
         imageUrl: '/assets/new20.png',
         tags: ['New']
@@ -197,6 +217,7 @@ export class FoodService {
       {
         id:21,
         name: '1-PC Fully Loaded Meal',
+        description: '1 piece of your favorite Original Recipe or Hot & Crispy chicken, paired with steamed rice, jr. mushroom soup, mashed potato and your choice of drink.',
         price: 195.00,
         imageUrl: '/assets/fullyloaded1.png',
         tags: ['FullyLoaded']
@@ -205,6 +226,7 @@ export class FoodService {
       {
         id:22,
         name: 'Shots Fully Loaded Meal',
+        description: '1 piece of your favorite Original Recipe or Hot & Crispy chicken with 1 regular serving of shots, paired with steamed rice, jr. mushroom soup, regular mashed potato, and your choice of drink.',
         price: 260.00,
         imageUrl: '/assets/fullyloaded2.png',
         tags: ['FullyLoaded']
@@ -213,6 +235,7 @@ export class FoodService {
       {
         id:23,
         name: '2-PC Fully Loaded Meal',
+        description: '2 pieces of your favorite Original Recipe or Hot & Crispy chicken, paired with steamed rice,jr. mushroom soup, regular mashed potato, and your choice of drink.',
         price: 275.00,
         imageUrl: '/assets/fullyloaded3.png',
         tags: ['FullyLoaded']
@@ -221,6 +244,7 @@ export class FoodService {
       {
         id:24,
         name: 'Famous Bowl Fully Loaded Meal',
+        description: 'Load up with a complete meal in a box: 1 pc. chicken, Mushroom Soup, Famous Bowl, Rice and Drink',
         price: 240.00,
         imageUrl: '/assets/fullyloaded4.png',
         tags: ['FullyLoaded']
@@ -229,6 +253,7 @@ export class FoodService {
       {
         id:25,
         name: '2-PC Chicken Meal',
+        description: '2 pieces of your favorite Original Recipe or Hot and Crispy chicken paired with steamed rice and your choice of drink.',
         price: 235.00,
         imageUrl: '/assets/favorites1.png',
         tags: ['Favorites']
@@ -237,6 +262,7 @@ export class FoodService {
       {
         id:26,
         name: '1-PC Chicken Meal With Soup',
+        description: '1 piece of your favorite Original Recipe or Hot and Crispy Chicken meal paired with steamed rice, mushroom soup, and your choice of drink.',
         price: 175.00,
         imageUrl: '/assets/favorites2.png',
         tags: ['Favorites']
@@ -245,6 +271,7 @@ export class FoodService {
       {
         id:27,
         name: '1-PC Chicken Meal With Mashed Potato',
+        description: '1 piece of your favorite Original Recipe or Hot and Crispy Chicken meal paired with steamed rice, mashed potato, and your choice of drink.',
         price: 175.00,
         imageUrl: '/assets/favorites3.png',
         tags: ['Favorites']
@@ -253,6 +280,7 @@ export class FoodService {
       {
         id:28,
         name: '1-PC Chicken Meal With Brownie',
+        description: '1 piece of your favorite Original Recipe or Hot and Crispy Chicken meal paired with steamed rice, brownie, and your choice of drink.',
         price: 175.00,
         imageUrl: '/assets/favorites4.png',
         tags: ['Favorites']
@@ -261,6 +289,7 @@ export class FoodService {
       {
         id:29,
         name: '1-PC Chicken Spaghetti Meal',
+        description: '1 piece of your favorite Original Recipe or Hot and Crispy Chicken meal paired with spaghetti and your choice of drink.',
         price: 195.00,
         imageUrl: '/assets/pasta1.png',
         tags: ['Pasta']
@@ -269,6 +298,7 @@ export class FoodService {
       {
         id:30,
         name: 'Spaghetti',
+        description: 'Your favorite pinoy-style spaghetti topped with sweet meaty spaghetti sauce and sprinkled with grated cheese.',
         price: 65.00,
         imageUrl: '/assets/pasta2.png',
         tags: ['Pasta']
@@ -277,6 +307,7 @@ export class FoodService {
       {
         id:31,
         name: 'Ala King Rice Bowl Meal',
+        description: 'hello',
         price: 180.00,
         imageUrl: '/assets/pasta3.png',
         tags: ['Pasta']
@@ -285,6 +316,7 @@ export class FoodService {
       {
         id:32,
         name: 'Ala King Rice Bowl',
+        description: 'hello',
         price: 140.00,
         imageUrl: '/assets/pasta4.png',
         tags: ['Pasta']
@@ -293,6 +325,7 @@ export class FoodService {
       {
         id:33,
         name: 'Sisig Rice Bowl',
+        description: 'hello',
         price: 140.00,
         imageUrl: '/assets/pasta5.png',
         tags: ['Pasta']
@@ -301,6 +334,7 @@ export class FoodService {
       {
         id:34,
         name: 'Sisig Rice Bowl Meal',
+        description: 'hello',
         price: 180.00,
         imageUrl: '/assets/pasta6.png',
         tags: ['Pasta']
@@ -309,6 +343,7 @@ export class FoodService {
       {
         id:35,
         name: 'Ala King Zinger Steak Ala Carte',
+        description: 'hello',
         price: 130.00,
         imageUrl: '/assets/pasta7.png',
         tags: ['Pasta']
@@ -317,6 +352,7 @@ export class FoodService {
       {
         id:36,
         name: 'Ala King Zinger Steak Meal',
+        description: 'hello',
         price: 165.00,
         imageUrl: '/assets/pasta8.png',
         tags: ['Pasta']
@@ -325,6 +361,7 @@ export class FoodService {
       {
         id:37,
         name: '6-PC Bucket Meal',
+        description: 'hello',
         price: 635.00,
         imageUrl: '/assets/bucket1.png',
         tags: ['Bucket']
@@ -333,6 +370,7 @@ export class FoodService {
       {
         id:38,
         name: '8-Pc Bucket Meal',
+        description: 'hello',
         price: 805.00,
         imageUrl: '/assets/bucket2.png',
         tags: ['Bucket']
@@ -341,6 +379,7 @@ export class FoodService {
       {
         id:39,
         name: 'Bucket of 10',
+        description: 'hello',
         price: 810.00,
         imageUrl: '/assets/bucket3.png',
         tags: ['Bucket']
@@ -349,6 +388,7 @@ export class FoodService {
       {
         id:40,
         name: 'Bucket of 6',
+        description: 'hello',
         price: 540.00,
         imageUrl: '/assets/bucket4.png',
         tags: ['Bucket']
@@ -357,6 +397,7 @@ export class FoodService {
       {
         id:41,
         name: 'Bucket of 8',
+        description: 'hello',
         price: 660.00,
         imageUrl: '/assets/bucket5.png',
         tags: ['Bucket']
@@ -365,6 +406,7 @@ export class FoodService {
       {
         id:42,
         name: 'Bucket of 15',
+        description: 'hello',
         price: 1205.00,
         imageUrl: '/assets/bucket6.png',
         tags: ['Bucket']
@@ -373,6 +415,7 @@ export class FoodService {
       {
         id:43,
         name: 'Bucket of 20',
+        description: 'hello',
         price: 1610.00,
         imageUrl: '/assets/bucket7.png',
         tags: ['Bucket']
@@ -381,6 +424,7 @@ export class FoodService {
       {
         id:44,
         name: 'Bucket of 6 with Spaghetti Platter',
+        description: 'hello',
         price: 680.00,
         imageUrl: '/assets/bucket8.png',
         tags: ['Bucket']
@@ -389,6 +433,7 @@ export class FoodService {
       {
         id:45,
         name: 'California Maki Twister',
+        description: 'hello',
         price: 120.00,
         imageUrl: '/assets/sandwich1.png',
         tags: ['Sandwich']
@@ -397,6 +442,7 @@ export class FoodService {
       {
         id:46,
         name: 'Zinger',
+        description: 'hello',
         price: 155.00,
         imageUrl: '/assets/sandwich2.png',
         tags: ['Sandwich']
@@ -405,6 +451,7 @@ export class FoodService {
       {
         id:47,
         name: 'Twister Combo',
+        description: 'hello',
         price: 170.00,
         imageUrl: '/assets/sandwich3.png',
         tags: ['Sandwich']
@@ -413,6 +460,7 @@ export class FoodService {
       {
         id:48,
         name: 'Original Recipe Snacker',
+        description: 'hello',
         price: 95.00,
         imageUrl: '/assets/sandwich4.png',
         tags: ['Sandwich']
@@ -421,6 +469,7 @@ export class FoodService {
       {
         id:49,
         name: 'Shots Combo',
+        description: 'hello',
         price: 130.00,
         imageUrl: '/assets/snacks1.png',
         tags: ['Snacks']
@@ -429,6 +478,7 @@ export class FoodService {
       {
         id:50,
         name: 'Regular Shots',
+        description: 'hello',
         price: 80.00,
         imageUrl: '/assets/snacks2.png',
         tags: ['Snacks']
@@ -437,6 +487,7 @@ export class FoodService {
       {
         id:51,
         name: 'Large Shots',
+        description: 'hello',
         price: 130.00,
         imageUrl: '/assets/snacks3.png',
         tags: ['Snacks']
@@ -445,6 +496,7 @@ export class FoodService {
       {
         id:52,
         name: 'Famous Bowl',
+        description: 'hello',
         price: 75.00,
         imageUrl: '/assets/snacks4.png',
         tags: ['Snacks']
@@ -453,6 +505,7 @@ export class FoodService {
       {
         id:53,
         name: 'REGULAR COKE',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks1.png',
         tags: ['Drinks']
@@ -461,6 +514,7 @@ export class FoodService {
       {
         id:54,
         name: 'REGULAR SPRITE',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks2.png',
         tags: ['Drinks']
@@ -469,6 +523,7 @@ export class FoodService {
       {
         id:55,
         name: 'REGULAR ROYAL',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks3.png',
         tags: ['Drinks']
@@ -477,6 +532,7 @@ export class FoodService {
       {
         id:56,
         name: 'BOTTLED WATER',
+        description: 'hello',
         price: 39.00,
         imageUrl: '/assets/drinks4.png',
         tags: ['Drinks']
@@ -485,6 +541,7 @@ export class FoodService {
       {
         id:57,
         name: 'CARAMEL SUNDAE',
+        description: 'hello',
         price: 50.00,
         imageUrl: '/assets/drinks5.png',
         tags: ['Drinks']
@@ -493,6 +550,7 @@ export class FoodService {
       {
         id:58,
         name: 'COKE FLOAT',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks6.png',
         tags: ['Drinks']
@@ -501,6 +559,7 @@ export class FoodService {
       {
         id:59,
         name: 'SPRITE FLOAT',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks7.png',
         tags: ['Drinks']
@@ -509,6 +568,7 @@ export class FoodService {
       {
         id:60,
         name: 'ROYAL FLOAT',
+        description: 'hello',
         price: 55.00,
         imageUrl: '/assets/drinks8.png',
         tags: ['Drinks']
