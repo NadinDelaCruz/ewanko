@@ -40,7 +40,7 @@
   <!-- Checkout and Actions Section -->
   <div class="checkout">
     <!-- Total Items and Price -->
-    <div class="food-count">{{ cart.items.length }} Items</div>
+    <div class="food-count">{{ cart.items.length || 0 }} Items</div>
     <div class="total-price">₱ {{ cart.totalPrice || 0 }}</div>
 
     <!-- Actions -->

@@ -18,12 +18,17 @@ export class CartPageComponent implements OnInit{
    }
 
   ngOnInit(): void {
+    this.setCart();
   }
 
   setCart() {
     this.cart = this.cartService.getCart();
-    console.log('Cart after refresh:', this.cart);
-    console.log('Total price:', this.cart.totalPrice);
+    if (!this.cart || !this.cart.items) {
+      this.cart = new Cart();
+    }
+
+    console.log('Cart after setCart:', this.cart);
+    console.log('Total Price after setCart:', this.cart.totalPrice);
   }
 
   removeFromCart(cartItem: CartItem) {

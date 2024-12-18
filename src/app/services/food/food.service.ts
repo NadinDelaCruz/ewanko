@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Foods } from '../../shared/models/food';
-import { NgModule } from '@angular/core';
 import { Tag } from '../../shared/models/Tag';
 
 @Injectable({

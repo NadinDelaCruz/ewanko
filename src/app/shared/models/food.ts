@@ -4,4 +4,4 @@ export class Foods {
     name!: string;
     tags?: string[];
     imageUrl!: string;
-}
+  }

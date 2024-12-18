@@ -5,10 +5,14 @@ export class CartItem {
     this.food = food;
   }
 
-  food: Foods;
+  food!: Foods;
   quantity: number = 1;
 
   get price(): number {
-    return this.food.price * this.quantity;
+    if (!this.food || !this.food.price) {
+      return 0;
+    }
+
+    return this.food?.price ? this.food.price * this.quantity : 0;
   }
 }

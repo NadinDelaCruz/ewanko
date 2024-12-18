@@ -12,6 +12,8 @@ export class CartService {
     const savedCart = localStorage.getItem('cart');
     if (savedCart) {
       this.cart = JSON.parse(savedCart);
+    } else {
+      this.cart = new Cart();
     }
   }
 
@@ -21,16 +23,16 @@ export class CartService {
     const existingCartItem = this.cart.items.find(item => item.food.id === food.id);
 
     if (existingCartItem) {
-      existingCartItem.quantity += 1;
+      existingCartItem.quantity++;
     } else {
-      this.cart.items.push(new CartItem(food));
+      this.cart.items.push(new CartItem({ ...food }));
     }
 
+    console.log('Cart after adding new item:', this.cart); // Debug cart structure
     this.saveCart();
-    console.log('Updated cart after adding new item:', this.cart);
   }
 
-  private saveCart(): void {
+  saveCart(): void {
     localStorage.setItem('cart', JSON.stringify(this.cart));
 
     console.log('Cart saved to localStorage:', this.cart);
