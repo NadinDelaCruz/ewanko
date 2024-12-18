@@ -5,6 +5,7 @@ import { CartItem } from '../shared/models/CartItem';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
+
 @Component({
   selector: 'app-cart-page',
   imports: [NgFor, CommonModule, RouterLink],

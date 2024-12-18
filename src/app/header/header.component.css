@@ -27,7 +27,7 @@ body, h1, h2, h3, p, a {
   .nav-links {
     display: flex;
     gap: 3vw; 
-    padding-right: 70%; 
+    padding-right: 50%; 
   }
   
   .nav-links a {

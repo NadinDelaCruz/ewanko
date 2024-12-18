@@ -307,7 +307,7 @@ export class FoodService {
       {
         id:31,
         name: 'Ala King Rice Bowl Meal',
-        description: 'hello',
+        description: 'Our delicious Ala King Rice Bowl, served with your choice of drink.',
         price: 180.00,
         imageUrl: '/assets/pasta3.png',
         tags: ['Pasta']
@@ -316,7 +316,7 @@ export class FoodService {
       {
         id:32,
         name: 'Ala King Rice Bowl',
-        description: 'hello',
+        description: 'A bowl with 2 Original Recipe fillets drenched with creamy Ala-King sauce with steamed rice and corn on the side.',
         price: 140.00,
         imageUrl: '/assets/pasta4.png',
         tags: ['Pasta']
@@ -334,7 +334,7 @@ export class FoodService {
       {
         id:34,
         name: 'Sisig Rice Bowl Meal',
-        description: 'hello',
+        description: 'KFC Hot Shots drizzled with chicken sisig sauce, fried chicken skin, topped with mayo and a side of egg paired with steamed rice',
         price: 180.00,
         imageUrl: '/assets/pasta6.png',
         tags: ['Pasta']
@@ -352,7 +352,7 @@ export class FoodService {
       {
         id:36,
         name: 'Ala King Zinger Steak Meal',
-        description: 'hello',
+        description: 'KFC Hot Shots drizzled with chicken sisig sauce, fried chicken skin, topped with mayo and a side of egg paired with steamed rice and your choice of drink.',
         price: 165.00,
         imageUrl: '/assets/pasta8.png',
         tags: ['Pasta']
@@ -361,7 +361,7 @@ export class FoodService {
       {
         id:37,
         name: '6-PC Bucket Meal',
-        description: 'hello',
+        description: 'A smart choice for a group of 3 with 6 pieces of your favorite KFC chicken, gravy, your choice of 3 fixins, and your choice of 3 drinks.',
         price: 635.00,
         imageUrl: '/assets/bucket1.png',
         tags: ['Bucket']
@@ -370,7 +370,7 @@ export class FoodService {
       {
         id:38,
         name: '8-Pc Bucket Meal',
-        description: 'hello',
+        description: 'A complete group meal with 8 pcs of your favorite Original Recipe or Hot and Crispy chicken, gravy, your choice of 4 fixins, 4 steamed rice and your choice of 4 drinks.',
         price: 805.00,
         imageUrl: '/assets/bucket2.png',
         tags: ['Bucket']
@@ -379,16 +379,16 @@ export class FoodService {
       {
         id:39,
         name: 'Bucket of 10',
-        description: 'hello',
+        description: 'Buy a Bucket of 10 pcs of Original Recipe or Hot and Crispy chicken',
         price: 810.00,
         imageUrl: '/assets/bucket3.png',
         tags: ['Bucket']
       },
-
+      
       {
         id:40,
         name: 'Bucket of 6',
-        description: 'hello',
+        description: 'Get 6 pieces our signature KFC Chicken! Choose from Original Recipe or Hot and Crispy',
         price: 540.00,
         imageUrl: '/assets/bucket4.png',
         tags: ['Bucket']
@@ -397,7 +397,7 @@ export class FoodService {
       {
         id:41,
         name: 'Bucket of 8',
-        description: 'hello',
+        description: '8 pieces of our signature KFC chicken paired with gravy ',
         price: 660.00,
         imageUrl: '/assets/bucket5.png',
         tags: ['Bucket']
@@ -406,7 +406,7 @@ export class FoodService {
       {
         id:42,
         name: 'Bucket of 15',
-        description: 'hello',
+        description: '15 pieces of our signature KFC chicken paired with gravy',
         price: 1205.00,
         imageUrl: '/assets/bucket6.png',
         tags: ['Bucket']
@@ -415,7 +415,7 @@ export class FoodService {
       {
         id:43,
         name: 'Bucket of 20',
-        description: 'hello',
+        description: '20 pieces of our signature KFC chicken paired with gravy',
         price: 1610.00,
         imageUrl: '/assets/bucket7.png',
         tags: ['Bucket']
@@ -424,7 +424,7 @@ export class FoodService {
       {
         id:44,
         name: 'Bucket of 6 with Spaghetti Platter',
-        description: 'hello',
+        description: '6pcs of KFC signature chicken with 1 Spaghetti Super Platter',
         price: 680.00,
         imageUrl: '/assets/bucket8.png',
         tags: ['Bucket']
@@ -433,7 +433,7 @@ export class FoodService {
       {
         id:45,
         name: 'California Maki Twister',
-        description: 'hello',
+        description: 'Asian inspired Twister with crunchy chicken strips wrapped in a toasted tortilla sandwich with mango bits and cucumber served with Japanese Mayo dressing.',
         price: 120.00,
         imageUrl: '/assets/sandwich1.png',
         tags: ['Sandwich']
@@ -442,7 +442,7 @@ export class FoodService {
       {
         id:46,
         name: 'Zinger',
-        description: 'hello',
+        description: 'Our signature big spicy sandwich made with crunchy Zinger chicken fillet topped with fresh lettuce and mayo in a soft Kaiser bun.',
         price: 155.00,
         imageUrl: '/assets/sandwich2.png',
         tags: ['Sandwich']
@@ -451,7 +451,7 @@ export class FoodService {
       {
         id:47,
         name: 'Twister Combo',
-        description: 'hello',
+        description: 'Your choice between our California Maki or Pizza Twister, paired with your choice of fixins and drink.',
         price: 170.00,
         imageUrl: '/assets/sandwich3.png',
         tags: ['Sandwich']
@@ -460,7 +460,7 @@ export class FoodService {
       {
         id:48,
         name: 'Original Recipe Snacker',
-        description: 'hello',
+        description: 'A delicious whole meat chicken fillet sandwich with lettuce and pepper mayo in a 3.5 inch sesame seeded bun.',
         price: 95.00,
         imageUrl: '/assets/sandwich4.png',
         tags: ['Sandwich']
@@ -478,7 +478,7 @@ export class FoodService {
       {
         id:50,
         name: 'Regular Shots',
-        description: 'hello',
+        description: 'Bite-sized pieces of spicy boneless chicken thats crispy on the outside, tender on the inside, with your choice of fixins and drink.',
         price: 80.00,
         imageUrl: '/assets/snacks2.png',
         tags: ['Snacks']
@@ -487,7 +487,7 @@ export class FoodService {
       {
         id:51,
         name: 'Large Shots',
-        description: 'hello',
+        description: 'Fun bite-sized pieces of boneless chicken you can pop.',
         price: 130.00,
         imageUrl: '/assets/snacks3.png',
         tags: ['Snacks']
@@ -496,7 +496,7 @@ export class FoodService {
       {
         id:52,
         name: 'Famous Bowl',
-        description: 'hello',
+        description: 'KFC snack favorite, Famous bowl, filled with all your KFC favorites',
         price: 75.00,
         imageUrl: '/assets/snacks4.png',
         tags: ['Snacks']
@@ -505,7 +505,7 @@ export class FoodService {
       {
         id:53,
         name: 'REGULAR COKE',
-        description: 'hello',
+        description: 'Coke Regular',
         price: 55.00,
         imageUrl: '/assets/drinks1.png',
         tags: ['Drinks']
@@ -514,7 +514,7 @@ export class FoodService {
       {
         id:54,
         name: 'REGULAR SPRITE',
-        description: 'hello',
+        description: 'Coke Sprite',
         price: 55.00,
         imageUrl: '/assets/drinks2.png',
         tags: ['Drinks']
@@ -523,7 +523,7 @@ export class FoodService {
       {
         id:55,
         name: 'REGULAR ROYAL',
-        description: 'hello',
+        description: 'Coke Royal',
         price: 55.00,
         imageUrl: '/assets/drinks3.png',
         tags: ['Drinks']
@@ -532,7 +532,7 @@ export class FoodService {
       {
         id:56,
         name: 'BOTTLED WATER',
-        description: 'hello',
+        description: 'Bottled Water',
         price: 39.00,
         imageUrl: '/assets/drinks4.png',
         tags: ['Drinks']
@@ -541,7 +541,7 @@ export class FoodService {
       {
         id:57,
         name: 'CARAMEL SUNDAE',
-        description: 'hello',
+        description: 'Creamy vanilla ice cream drizzled with sweet caramel syrup',
         price: 50.00,
         imageUrl: '/assets/drinks5.png',
         tags: ['Drinks']
@@ -550,7 +550,7 @@ export class FoodService {
       {
         id:58,
         name: 'COKE FLOAT',
-        description: 'hello',
+        description: 'Coke drink topped with creamy vanilla ice cream and rich chocolate syrup',
         price: 55.00,
         imageUrl: '/assets/drinks6.png',
         tags: ['Drinks']
@@ -559,7 +559,7 @@ export class FoodService {
       {
         id:59,
         name: 'SPRITE FLOAT',
-        description: 'hello',
+        description: 'Sprite drink topped with creamy vanilla ice cream',
         price: 55.00,
         imageUrl: '/assets/drinks7.png',
         tags: ['Drinks']
@@ -568,7 +568,7 @@ export class FoodService {
       {
         id:60,
         name: 'ROYAL FLOAT',
-        description: 'hello',
+        description: 'Royal drink topped with creamy vanilla ice cream',
         price: 55.00,
         imageUrl: '/assets/drinks8.png',
         tags: ['Drinks']
